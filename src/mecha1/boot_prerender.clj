@@ -18,8 +18,8 @@
     }, 0);
   });")
 
-(boot/deftask prerender
-  "Prerenders all .html output files in the fileset."
+(boot/deftask phantom
+  "Prerenders all .html output files in the fileset by using phantomjs."
   []
   (let [rjs-dir  (boot/tmp-dir!)
         rjs-path (.getPath (io/file rjs-dir "render.js"))
