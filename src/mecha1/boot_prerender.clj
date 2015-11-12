@@ -12,7 +12,6 @@
     setTimeout(function() {
       var html = page.evaluate(function() {
         return document.documentElement.outerHTML;
-        //return document.getElementById(\"app\").innerHTML;
       });
       console.log(html);
       phantom.exit();
